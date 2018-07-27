@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="plotStore">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/styles/style.css">
+		<link rel="stylesheet" href="/styles/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="/styles/slider.css"/>
+		<script src="/javascripts/angular.js"></script>
+		<script src="/javascripts/jquery-1.11.2.min.js"></script>
+		<script src="/javascripts/bootstrap.min.js"></script>
+		<script src="/javascripts/bootstrap-slider.js"></script>
+		<script src="/javascripts/d3.min.js"></script>
+		<script src="/javascripts/script1.js"></script>
+		
+	</head>
+	<body ng-controller="plotStoreCtrl">
+		
+		<form class="form-inline" role="form">
+		<input id ="tan" type="text" autocomplete="on" autofocus placeholder="First String" ng-model="typo1"/>
+		<input id ="tan1" type="text" autocomplete="on" autofocus placeholder="Second String" ng-model="typo2"/>
+		<input id ="tan1" type="text" autocomplete="on" autofocus placeholder="Stringency--Can be left blank" ng-model="typo3"/>
+		<label>Window Size:</label>
+		<input type="text" class="span2" value="" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="1" data-slider-orientation="horizontal" data-slider-selection="before"data-slider-tooltip="show" ng-model="ran">
+		<input type="submit" class="btn btn-primary" value="Submit" ng-click="evaluate()"/>
+		</form>
+	</body>
+</html>

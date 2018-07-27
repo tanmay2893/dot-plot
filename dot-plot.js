@@ -22,7 +22,7 @@ app.get('/animation',function(req,res){
 	console.log('Entered In animation: '+ip);
 	res.sendfile('index3.html')
 });
-var port=process.env.PORT||80;
+var port=process.env.PORT||3000;
 app.listen(port,function(err){
 	console.log('listening on *3000');
 });

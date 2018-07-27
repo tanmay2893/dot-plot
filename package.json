@@ -1,0 +1,15 @@
+{
+  "name": "dot-plot",
+  "subdomain": "dot-plot",
+  "scripts": {
+    "start": "dot-plot.js"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "express": "*",
+    "morgan": "*"
+  }
+}
